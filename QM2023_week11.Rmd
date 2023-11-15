@@ -1,10 +1,9 @@
 ---
-title: "QM 2022 Week 11: Logit and Probit Models"
+title: "QM 2023 Week 11: Logit and Probit Models"
 author:
   - "Oliver Rittmann"
   - "Domantas Undzėnas"
-  - "Lion Behrens"
-date: "November 16 | 17 | 18, 2022"
+date: "November 16 | 17, 2023"
 output:
   html_document:
     toc: yes
@@ -111,7 +110,7 @@ beta0 <- 0.25
 beta1 <- -0.8
 
 # Randomly draw an Independent Variable
-set.seed(2022)
+set.seed(2023)
 X <- rnorm(n, 0, 1)
 ```
 
