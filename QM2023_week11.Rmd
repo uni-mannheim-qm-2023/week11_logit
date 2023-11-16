@@ -696,9 +696,11 @@ as.ggplot(~separationplot(pred = m0$fitted,
 
 Let's have a look at some real data!
 
-We will work with the @fearon_laitin_2003 dataset. You can find the respective paper, "Ethnicity, Insurgency, and Civil War", [here](https://www.cambridge.org/core/journals/american-political-science-review/article/ethnicity-insurgency-and-civil-war/B1D5D0E7C782483C5D7E102A61AD6605). It was published 2003 in the _American Political Science Review_ and is cited more than 10.000 times!
+We will work with the @fearon_laitin_2003 dataset. You can find the respective paper, "Ethnicity, Insurgency, and Civil War", [here](https://www.cambridge.org/core/journals/american-political-science-review/article/ethnicity-insurgency-and-civil-war/B1D5D0E7C782483C5D7E102A61AD6605). It was published 2003 in the _American Political Science Review_ and is cited more than 11.000 times!
 
-First, we estimate the effect of log mountains (`log_mountain`) on onset of civil war (`civilwar`) using `optimx` and the functions from above.
+Main finding of that study: "The factors that explain which countries have been at risk for civil war **are not** their _ethnic or religious characteristics_ **but rather** the _conditions that favor insurgency_. These include poverty [...], political instability, rough terrain, and large populations."
+
+First, we estimate the effect of log mountains (`log_mountain`), a measure of "rough terrain", on onset of civil war (`civilwar`) using `optimx` and the functions from above.
 
 We start with a simple bivariate model.
 
